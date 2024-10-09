@@ -1,0 +1,65 @@
+nav {
+    background-color: #302b4f;
+    padding: 10px;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #695ba3;
+}
+
+button {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Submenús */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    top: 100%;
+}
+
+li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    float: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    li {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Formularios */
+#menuForm,
+#editMenuForm {
+    margin: 20px 0;
+}

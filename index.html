@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Menú Dinámico</title>
+</head>
+
+<body>
+    <nav>
+        <ul id="menu"></ul>
+    </nav>
+
+    <!-- Formulario para agregar nuevas opciones de menú -->
+    <div id="menuForm">
+        <h3>Agregar nueva opción de menú</h3>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre">
+        <label for="enlace">Enlace:</label>
+        <input type="text" id="enlace">
+        <button onclick="agregarOpcion()">Agregar Opción</button>
+    </div>
+
+    <!-- Formulario para editar una opción existente -->
+    <div id="editMenuForm" style="display:none;">
+        <h3>Editar opción de menú</h3>
+        <label for="editNombre">Nombre:</label>
+        <input type="text" id="editNombre">
+        <label for="editEnlace">Enlace:</label>
+        <input type="text" id="editEnlace">
+        <input type="hidden" id="editId">
+        <button onclick="guardarEdicion()">Guardar Cambios</button>
+        <button onclick="cancelarEdicion()">Cancelar</button>
+    </div>
+
+    <script src="menu.js"></script>
+</body>
+
+</html>
